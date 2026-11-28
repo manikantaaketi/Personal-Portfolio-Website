@@ -1,0 +1,95 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 40px;
+}
+
+.card-title {
+    border: 1px solid rgb(69, 69, 69);
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.card-title i {
+    color: white;
+}
+.skills-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.skills-box-1 {
+    border: 1px solid rgb(69, 69, 69);
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+
+.skills-box-1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+.skills-content {
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.skills-content span {
+    color: white;
+    font-weight: 500;
+}
+.skills-content i{
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.skills-percentage {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(69, 69, 69);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 3px 10px;
+}
+.skills-bar{
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(69, 69, 69);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.skills-bar span {
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 30px;
+}
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 576px) {
+    .skills-box {
+        grid-template-columns: 1fr;
+    }
+
+    .skills {
+        padding: 25px;
+    }
+}

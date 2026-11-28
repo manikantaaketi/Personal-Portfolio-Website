@@ -1,0 +1,120 @@
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    width: 100%;
+    padding-bottom: 100px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contact-info h2 {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #ccc;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.contact-info ul {
+    padding: 0;
+    margin: 0 0 20px 0;
+    list-style: none;
+}
+
+.contact-info ul li {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info ul li i {
+    color: white;
+}
+
+.contact-info .socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.contact-info .socials a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contact-info .socials  i {
+    background-color: var(--main-color);
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+}
+
+.contact-info .socials i:hover  {
+    
+    transform: translateY(-3px);
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid rgb(69, 69, 69);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--main-color);
+}
+
+.contact-form .btn {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--main-color);
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+.contact-form .btn:hover {
+    background-color: white;
+    color: black;
+}
+@media (max-width: 576px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        padding: 25px;
+    }
+}

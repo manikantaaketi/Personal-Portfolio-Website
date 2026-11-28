@@ -1,0 +1,144 @@
+.profile-card{
+    width: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px 0px 30px 30px;
+    gap: 20px;
+
+    position: fixed;
+    left: 115px;
+
+}
+.profile-img{
+    width: 200px;
+    margin-top: 50px;
+    border-radius: 30px 0px 40px 30px;
+}
+.caption{
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--main-color);
+}
+.social{
+    display: flex;
+    gap: 10px;
+}
+.social i{
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(38,38,38);
+    border: 1px solid rgb(69,69,69);
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+.social i:hover{
+    color: var(--main-color);
+}
+.btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70px;
+    border-top: 1px solid rgb(67,67,67);
+    width: 100%;
+}
+.btn-1,.btn-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(67,6,67);
+    color: white;
+    transition: 0.5s;
+
+}
+.btn-1:hover,.btn-2:hover{
+    color: var(--secondary-color);
+}
+@media (max-width: 992px) {
+    .profile-card {
+        width: 300px;
+        position: fixed;
+        left: 85px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-card {
+        width: 95%;
+        position: static;
+        margin-left: 80px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 992px) {
+    .home-2 {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .home-2-1 {
+        padding: 3px 8px;
+        font-size: 35px;
+    }
+
+    .box-1 {
+        font-size: 35px;
+    }
+
+    .box-2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .home {
+        padding: 25px;
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    .home-1 {
+        font-size: 20px;
+    }
+
+    .home-2 {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .home-2-1 {
+        padding: 3px 8px;
+        font-size: 20px;
+    }
+
+    .home-3 {
+        font-size: 18px;
+    }
+    .box-1 {
+    font-size: 30px;
+}
+
+.box-2 {
+    font-size: 10px;
+    width: 100%;
+}
+
+.rewards {
+    margin-top: 40px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+}
+.profile-menu-icons li i {
+    
+    transition: color 0.3s ease;
+}
+
+.profile-menu-icons li.active i {
+    color: var(--secondary-color);
+}

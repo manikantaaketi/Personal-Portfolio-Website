@@ -1,0 +1,59 @@
+.work-education {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  width: 100%;
+}
+
+.we-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.we-column h2 {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 i {
+    color: white;
+}
+
+.we-item {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transform: all 0.3s ease;
+}
+.we-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0);
+}
+.we-item h3 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.we-item .time {
+    font-size: 0.85rem;
+    color: var(--main-color);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.we-item p {
+    color: #ccc;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
